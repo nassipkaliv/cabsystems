@@ -1062,7 +1062,8 @@ h1,h2,h3,h4,h5,h6,p {
     display: inline-block;
     padding: 13px 70px;
     background-color: #fff;
-    color: #000;
+    color: #000 !important;
+    text-decoration: none !important;
     border-radius: 30px;
     font-size: 22px;
     font-weight: 500;
@@ -1814,5 +1815,719 @@ h1,h2,h3,h4,h5,h6,p {
     .btn-people-production {
         padding: 12px 30px;
         font-size: 14px;
+    }
+}
+
+/* =====================================================
+   Production Page Styles
+   ===================================================== */
+
+/* Production Hero Section */
+.prod-hero {
+    position: relative;
+    min-height: 90vh;
+    background-image: url('https://optim.tildacdn.com/tild3265-3538-4231-b437-316566626239/-/format/webp/d9703158dbda11f08896.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+.prod-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.prod-hero-title {
+    font-size: 72px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+
+.prod-hero-desc {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.prod-hero-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    animation: bounce 2s infinite;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Production Subtitle Section */
+.prod-subtitle-section {
+    padding-top: 105px;
+    padding-bottom: 75px;
+    background-color: #fff;
+}
+
+.prod-subtitle-text {
+    font-size: 28px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    line-height: 1.23;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Equipment Section */
+.prod-equipment-section {
+    padding: 90px 0 120px;
+    background-color: #f1f1f1;
+}
+
+.prod-equipment-title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prod-equipment-desc {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.prod-equipment-slider-wrapper {
+    position: relative;
+    --container-width: 1170px;
+    padding-left: calc((100vw - var(--container-width)) / 2);
+}
+
+.prod-equipment-swiper {
+    overflow: hidden;
+}
+
+.equipment-card {
+    background: #fff;
+    padding: 30px;
+    height: 100%;
+}
+
+.equipment-card-title {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+.equipment-card-desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.55;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.equipment-card-image {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipment-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Swiper Navigation */
+.prod-equipment-section {
+    position: relative;
+}
+
+.prod-equipment-swiper.swiper-button-next,
+.prod-equipment-swiper.swiper-button-prev {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #3c82c9;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 10;
+    margin-top: 0;
+}
+
+.prod-equipment-swiper.swiper-button-next:after,
+.prod-equipment-swiper.swiper-button-prev:after {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.prod-equipment-swiper.swiper-button-next {
+    right: 40px;
+}
+
+.prod-equipment-swiper.swiper-button-prev {
+    left: 40px;
+}
+
+/* Production Contact Section */
+.prod-contact-section {
+    background-color: #3c82c9;
+}
+
+.prod-contact-text {    
+    color: #fff;
+}
+
+
+.prod-contact-btn {
+    background: #fff;
+    color: #000;
+}
+
+.prod-contact-btn:hover {
+    background-color: #fff;
+    color: #3c82c9;
+}
+
+/* Production Gallery Section */
+.prod-gallery-section {
+    padding-top: 120px;
+    padding-bottom: 35px;
+    background-color: #fff;
+}
+
+.prod-gallery-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.prod-gallery-item {
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.prod-gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Production Info Section */
+.prod-info-section {
+    padding-top: 120px;
+    padding-bottom: 75px;
+    background-color: #fff;
+}
+
+
+.prod-info-title {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.prod-info-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.prod-info-list li {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #000;
+}
+
+
+/* Production Photos Section */
+.prod-photos-section {
+    padding: 40px 15px;
+    background-color: #fff;
+}
+
+.prod-photos-grid {
+    display: flex;
+    gap: 20px;
+    height: 690px;
+}
+
+.prod-photos-large {
+    flex: 1;
+    cursor: pointer;
+}
+
+.prod-photos-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.prod-photos-large:hover img {
+    opacity: 0.9;
+}
+
+.prod-photos-small-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.prod-photos-small {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.prod-photos-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.prod-photos-small:hover img {
+    opacity: 0.9;
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-overlay.active {
+    display: flex !important;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);   
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    padding: 0;
+}
+
+
+.lightbox-zoom {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    top: 20px;
+    right: 70px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    padding: 0;
+}
+
+.lightbox-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.lightbox-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-swiper .swiper-slide img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.lightbox-swiper .swiper-button-next,
+.lightbox-swiper .swiper-button-prev {
+    color: #000;
+    width: 50px;
+    height: 50px;
+}
+
+.lightbox-swiper .swiper-button-next:after,
+.lightbox-swiper .swiper-button-prev:after {
+    font-size: 24px;
+}
+
+/* Production Page Responsive */
+@media (max-width: 991px) {
+    .prod-hero-title {
+        font-size: 48px;
+    }
+
+    .prod-hero-desc {
+        font-size: 18px;
+    }
+
+    .prod-subtitle-section {
+        padding: 70px 0;
+    }
+
+    .prod-subtitle-text {
+        font-size: 24px;
+    }
+
+    .prod-equipment-section {
+        padding: 60px 0 80px;
+    }
+
+    .prod-equipment-title {
+        font-size: 36px;
+    }
+
+    .prod-equipment-desc {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .prod-equipment-slider-wrapper {
+        --container-width: 970px;
+    }
+
+    .prod-gallery-item img {
+        height: 280px;
+    }
+
+    .prod-info-title {
+        font-size: 24px;
+    }
+
+    .prod-specialists-title {
+        font-size: 36px;
+    }
+
+    .prod-specialists-desc {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .prod-hero {
+        min-height: 50vh;
+        background-attachment: scroll;
+        padding: 60px 0;
+    }
+
+    .prod-hero-title {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .prod-hero-desc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .prod-hero-arrow {
+        bottom: 30px;
+    }
+
+    .prod-hero-arrow svg {
+        width: 30px;
+        height: 15px;
+    }
+
+    .prod-subtitle-section {
+        padding: 50px 0;
+    }
+
+    .prod-subtitle-text {
+        font-size: 20px;
+    }
+
+    .prod-equipment-section {
+        padding: 50px 0 60px;
+    }
+
+    .prod-equipment-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .prod-equipment-desc {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .prod-equipment-slider-wrapper {
+        --container-width: 750px;
+        padding-left: 15px;
+    }
+
+    .prod-equipment-swiper.swiper-button-next,
+    .prod-equipment-swiper.swiper-button-prev {
+        width: 36px;
+        height: 36px;
+    }
+
+    .prod-equipment-swiper.swiper-button-next {
+        right: 15px;
+    }
+
+    .prod-equipment-swiper.swiper-button-prev {
+        left: 15px;
+    }
+
+    .prod-equipment-swiper.swiper-button-next:after,
+    .prod-equipment-swiper.swiper-button-prev:after {
+        font-size: 14px;
+    }
+
+    .prod-contact-section {
+        padding: 50px 0;
+    }
+
+    .prod-contact-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .prod-contact-form {
+        flex-direction: column;
+    }
+
+    .prod-contact-input {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .prod-contact-btn {
+        width: 100%;
+    }
+
+    .prod-gallery-section {
+        padding: 50px 0;
+    }
+
+    .prod-gallery-grid {
+        flex-direction: column;
+    }
+
+    .prod-gallery-item img {
+        height: 250px;
+    }
+
+    .prod-info-section {
+        padding: 50px 0;
+    }
+
+    .prod-info-block {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .prod-info-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .prod-info-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .prod-info-list li {
+        font-size: 15px;
+    }
+
+    .prod-specialists-section {
+        min-height: 350px;
+        padding: 60px 0;
+    }
+
+    .prod-specialists-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .prod-specialists-desc {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .btn-prod-specialists {
+        padding: 14px 40px;
+        font-size: 16px;
+    }
+
+    .prod-photos-grid {
+        height: 400px;
+        gap: 6px;
+    }
+
+    .prod-photos-small-grid {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 575px) {
+    .prod-photos-grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .prod-photos-large img {
+        height: 280px;
+    }
+
+    .prod-photos-small-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+    }
+
+    .prod-photos-small img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 575px) {
+    .prod-hero {
+        min-height: 45vh;
+        padding: 50px 0;
+    }
+
+    .prod-hero-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .prod-hero-desc {
+        font-size: 14px;
+    }
+
+    .prod-subtitle-section {
+        padding: 40px 0;
+    }
+
+    .prod-subtitle-text {
+        font-size: 18px;
+    }
+
+    .prod-equipment-section {
+        padding: 40px 0 50px;
+    }
+
+    .prod-equipment-title {
+        font-size: 24px;
+    }
+
+    .prod-equipment-desc {
+        font-size: 14px;
+    }
+
+    .equipment-card {
+        padding: 20px;
+    }
+
+    .equipment-card-title {
+        font-size: 18px;
+    }
+
+    .equipment-card-desc {
+        font-size: 14px;
+    }
+
+    .prod-equipment-slider-wrapper {
+        padding-left: 15px;
+    }
+
+    .prod-contact-text {
+        font-size: 14px;
+    }
+
+    .prod-contact-input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .prod-contact-btn {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .prod-info-title {
+        font-size: 20px;
+    }
+
+    .prod-info-list li {
+        font-size: 14px;
+    }
+
+    .prod-specialists-section {
+        min-height: 300px;
+        padding: 50px 0;
+    }
+
+    .prod-specialists-title {
+        font-size: 24px;
+    }
+
+    .prod-specialists-desc {
+        font-size: 14px;
+    }
+
+    .btn-prod-specialists {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .prod-photos-large img {
+        height: 250px;
+    }
+
+    .prod-photos-small img {
+        height: 120px;
     }
 }
